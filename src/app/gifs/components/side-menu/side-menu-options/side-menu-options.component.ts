@@ -14,7 +14,7 @@ interface MenuOption {
   templateUrl: './side-menu-options.component.html',
 })
 export default class SideMenuOptionsComponent {
-  menuOptions: MenuOption[] = [
+  menuOptions = signal<MenuOption[]>([
     {
       icon: 'fa-solid fa-chart-line',
       label: 'Trending',
@@ -28,5 +28,5 @@ export default class SideMenuOptionsComponent {
       subLabel: 'Buscar gifs',
       route: '/dashboard/search',
     },
-  ];
+  ]);
 }

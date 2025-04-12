@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { GifsListComponent } from '../../components/gifs-list/gifs-list/gifs-list.component';
 
-export const imageUrls: string[] = [
+const imageUrls: string[] = [
   'https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg',
   'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg',
   'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg',
@@ -21,4 +21,6 @@ export const imageUrls: string[] = [
   imports: [GifsListComponent],
   templateUrl: './trending-page.component.html',
 })
-export default class TrendingPageComponent {}
+export default class TrendingPageComponent {
+  imgages = signal(imageUrls);
+}
