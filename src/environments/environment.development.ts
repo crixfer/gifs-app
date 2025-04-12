@@ -1,8 +1,8 @@
 export const environment = {
   production: true,
-  companyName: 'Bliss',
+  companyName: 'GIFs',
   companyName2: 'App',
-  companySlogan: 'Bilingual Learning In Simple Steps!',
+  companySlogan: 'Whatever you wanna see!',
 
   //url
 
