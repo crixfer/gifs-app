@@ -24,6 +24,5 @@ import { GifService } from '../../services/gifs.service';
 })
 export default class TrendingPageComponent {
   // imgages = signal(imageUrls);
-
   gifService = inject(GifService);
 }

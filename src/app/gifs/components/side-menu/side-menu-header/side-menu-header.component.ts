@@ -6,6 +6,6 @@ import { environment } from '@environments/environment';
   imports: [],
   templateUrl: './side-menu-header.component.html',
 })
-export default class SideMenuHeaderComponent {
+export class SideMenuHeaderComponent {
   bliss = environment;
 }

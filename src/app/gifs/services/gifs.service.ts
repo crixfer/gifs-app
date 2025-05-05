@@ -56,7 +56,7 @@ export class GifService {
       .get<GiphyResponse>(`${environment.giphyUrl}/gifs/search`, {
         params: {
           api_key: environment.giphyApiKey,
-          limit: 9,
+          limit: 20,
           q: query,
         },
       })
